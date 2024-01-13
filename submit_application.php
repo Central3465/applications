@@ -8,14 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Additional fields and processing as needed
 
     // Send email (modify the email address and content accordingly)
-    $to = "your_email@example.com";
+    $to = "central3465@gmail.com";
     $subject = "New Job Application - $position";
     $message = "Name: $name\nEmail: $email\nPosition: $position\nInspiration: $inspiration";
 
     mail($to, $subject, $message);
 
     // Send to Discord webhook (modify the URL and content accordingly)
-    $discordWebhookUrl = "YOUR_DISCORD_WEBHOOK_URL";
+    $discordWebhookUrl = "https://discord.com/api/webhooks/1195857453145931906/IDkAR1DpeM5Im2keM5-NVEoS4NmYeU2Wfkhjm3FM_BjKhoKYPpbqS8ZoDcAN1wPx3TRL";
     $discordMessage = "New Job Application\nName: $name\nEmail: $email\nPosition: $position\nInspiration: $inspiration";
 
     $discordData = array("content" => $discordMessage);
