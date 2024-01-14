@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moderator Application Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    body h1 {
+      text-align: center;
+    }
+
+    body h2 {
+      text-align: center;
+    }
+
+    body p {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      margin-bottom: 16px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Moderator Application Form</h1>
+    <h2>General Information</h2>
+    <form action="submit_application.php" method="post">
+      <label for="name">Discord Username:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="name">Discord ID:</label>
+      <input type="number" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="coo">Country of Origin & Timezone:</label>
+      <input type="text" id="coo" name="coo" required>
+
+      <label for="position">Position:</label>
+      <select id="position" name="position" required>
+        <!-- <option value="developer">Developer</option> -->
+        <option value="moderator">Moderator</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <h2>Motivation & Experience</h2>
+
+      <label for="inspire">What inspired you to apply for this position, and how does it align with your personal and professional goals?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+
+      <label for="achievement">Describe a specific achievement or project from your past experiences that demonstrates your ability to excel in this role.</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+
+      <label for="skills">How do your skills and experiences uniquely qualify you for this position, and what do you believe sets you apart from other applicants?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+
+      <label for="share">Share a challenging situation you have encountered in your previous roles and explain how you successfully navigated through it. What did you learn from that experience?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+
+      <label for="ways">In what ways do you envision making a significant impact in this role, and how do you plan to contribute to the success of the team or organization?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+      
+      <label for="resume">To enhance the quality of your application, kindly submit your comprehensive Resume/CV.</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+      <h2>Additional Information</h2>
+
+      <label for="refererals">Provide the names and contact information of professional references who can speak to your work ethic, skills, and qualifications.</label>
+      <input type="text" id="refererals" name="refererals">
+
+      <label for="certifications">If you have certifications, licenses, or completed relevant training programs, list them here.</label>
+      <input type="text" id="certifications" name="certifications">
+
+      <label for="work">If applicable to the position, you could include links or attachments to a portfolio showcasing your work or relevant projects.</label>
+      <input type="text" id="work" name="work">
+
+      <label for="volunteer"> If you have relevant volunteer experience, you may want to briefly mention it, especially if it demonstrates skills or qualities relevant to the position.</label>
+      <input type="text" id="volunteer" name="volunteer">
+
+      <br>
+
+      <label for="other">Use this space to provide any other information you feel is important for the hiring manager to know, such as flexibility in work hours or willingness to travel.</label>
+      <textarea id="inspire" name="inspire" rows="6"></textarea>
+
+      <br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
