@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="0;url=index.html">
-  <title>Moderator Application Form</title>
+  <title>Developer Application Form</title>
   <style>
     body {
       font-family: Arial;
@@ -61,7 +61,7 @@
     input[type="submit"] {
       background-color: #4caf50;
       color: #fff;
-      cursor: not-allowed;
+      cursor: pointer;
     }
 
     input[type="submit"]:hover {
@@ -78,7 +78,7 @@
 <body>
 
   <div class="container">
-    <h1>Moderator Application Form</h1>
+    <h1>Developer Application Form</h1>
     <h2>General Information</h2>
     <form action="submit_application.html" method="post">
       <label for="name">Discord Username:</label>
@@ -99,37 +99,62 @@
       <label for="position">Position:</label>
       <select id="position" name="position" required>
         <!-- <option value="developer">Developer</option> -->
-        <option value="moderator">Moderator</option>
+        <option value="moderator">Developer</option>
         <!-- Add more options as needed -->
       </select>
 
       <h2>Motivation & Experience</h2>
 
-      <label for="inspire">What inspired you to apply for this position, and how does it align with your personal and professional goals?</label>
+      <label for="inspire">Can you describe a challenging coding problem you encountered in a previous project, and how you went about solving it?</label>
       <textarea id="inspire" name="inspire" rows="6" required></textarea>
 
       <br>
 
-      <label for="achievement">Describe a specific achievement or project from your past experiences that demonstrates your ability to excel in this role.</label>
+      <label for="achievement">What programming languages are you most comfortable with, and can you provide examples of projects where you have applied these languages effectively?</label>
       <textarea id="inspire" name="inspire" rows="6" required></textarea>
 
       <br>
 
-      <label for="skills">How do your skills and experiences uniquely qualify you for this position, and what do you believe sets you apart from other applicants?</label>
+      <label for="skills">How do you approach debugging and troubleshooting when you encounter an issue in your code?</label>
       <textarea id="inspire" name="inspire" rows="6" required></textarea>
 
       <br>
 
-      <label for="share">Share a challenging situation you have encountered in your previous roles and explain how you successfully navigated through it. What did you learn from that experience?</label>
+      <label for="share">Have you worked on any collaborative coding projects? If so, describe your role and contributions to the team.</label>
       <textarea id="inspire" name="inspire" rows="6" required></textarea>
 
       <br>
 
-      <label for="ways">In what ways do you envision making a significant impact in this role, and how do you plan to contribute to the success of the team or organization?</label>
+      <label for="ways">Explain the importance of version control systems in software development, and share your experience with using tools like Git.</label>
       <textarea id="inspire" name="inspire" rows="6" required></textarea>
 
       <br>
+
+      <label for="ways">How do you stay updated on the latest trends and advancements in the field of software development?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+
+      <label for="ways">Can you discuss a situation where you had to optimize code for better performance? What strategies did you employ?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
       
+      <br>
+
+      <label for="ways">Describe a scenario where you had to communicate technical details to a non-technical audience. How did you ensure effective communication?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+
+      <label for="ways">What is your experience with unit testing and automated testing? How do you ensure the reliability and quality of your code?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+
+      <label for="ways">How do you handle tight deadlines and prioritize tasks in a fast-paced development environment?</label>
+      <textarea id="inspire" name="inspire" rows="6" required></textarea>
+
+      <br>
+
       <label for="resume">To enhance the quality of your application, kindly submit your comprehensive Resume/CV.</label>
       <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
 

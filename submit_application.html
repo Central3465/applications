@@ -28,29 +28,7 @@
   <div class="container">
     <h2>Application Submitted</h2>
     <p>Thank you for submitting your application! We will review your information shortly.</p>
-    <script>
-      // Add this script to handle form submission and redirect
-      document.addEventListener("DOMContentLoaded", function() {
-        const form = document.querySelector("form");
-
-        form.addEventListener("submit", function(event) {
-          event.preventDefault(); // Prevent the default form submission
-
-          // Perform form submission logic here (e.g., send data to server)
-
-          // Display a redirect message
-          const redirectMessage = document.createElement("div");
-          redirectMessage.textContent = "Application submitted successfully. Redirecting to index.html...";
-          redirectMessage.classList.add("redirect-message");
-          form.appendChild(redirectMessage);
-
-          // Redirect to index.html after a delay
-          setTimeout(function() {
-            window.location.href = "index.html";
-          }, 2000); // Adjust the delay (in milliseconds) as needed
-        });
-      });
-    </script>
+    <script src="submit_application.php"></script>
   </div>
 
 </body>
